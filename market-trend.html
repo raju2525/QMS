@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PRODUCT Analysis MODULE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style> body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;}
+        header {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); /* Instagram-like gradient */
+            color: #ffffff; /* White text color */
+            padding: 0px;
+            
+        }
+        
+        .dash{
+            text-align: center;
+            font-size: 40px;
+        }
+        .home{
+            font-size: 25px;
+            color: #f0f0f0;
+        }
+        img{
+            width: 25px;
+        }
+        
+
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.product-card img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 1rem 0;
+  text-align: center;
+}
+body {
+      font-family: Arial, sans-serif;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .category {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 5px;
+    }
+
+    .product-card {
+      width: 300px;
+      margin: 20px;
+      padding: 15px;
+      border: 1px solid #842121;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .product-data {
+      text-align: center;
+    }
+
+    #productDetails {
+      display:flex;
+      
+    } 
+    </style>
+
+
+</head>
+
+<div>
+    <header><h1 style="font-size: 50px;">QMS</h1> 
+    
+    <h1 class="dash">Trending Products</h1>
+    
+             
+    <a href="#" class="home"><img src="img/dashboard.png" >Dashboard</a>           
+    
+    </header>
+    
+</div>
+
+  
+      
+    
+      
+    
+  <!-- ... (other modules or content) -->
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="app.js"></script>
+
+    
+<script src="https://kit.fontawesome.com/your-font-awesome-key.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+    
+  </style>
+</head>
+<body>
+
+<div class="categories">
+  <div class="category" onclick="loadProductData('Beauty')">Beauty</div>
+  <div class="category" onclick="loadProductData('Electronics')">Electronics</div>
+  <div class="category" onclick="loadProductData('Clothes')">Clothes</div>
+  <div class="category" onclick="loadProductData('FairnessCreams')">Fairness Creams</div>
+  <!-- Add more categories as needed -->
+</div>
+
+<div id="productDetails">
+  <!-- Product details will be displayed here dynamically -->
+</div>
+
+<script>
+  // Sample product data (replace with actual data)
+  const products = {
+    Beauty: [
+      {
+        name: 'Beauty Product 1',
+        description: 'This is the first beauty product.',
+        rating: 4.5,
+        price: 29.99,
+        reviews: 150,
+        salesData: [50, 60, 80, 40, 70, 90],
+        imageUrl: 'https://via.placeholder.com/300',
+      },
+      {
+        name: 'Beauty Product 2',
+        description: 'This is the second beauty product.',
+        rating: 4.2,
+        price: 19.99,
+        reviews: 120,
+        salesData: [30, 40, 60, 80, 50, 70],
+        imageUrl: 'https://via.placeholder.com/300',
+      },
+      // Add more products as needed
+    ],
+    Electronics: [
+      {
+        name: 'Electronic Gadget 1',
+        description: 'This is the first electronic gadget.',
+        rating: 4.0,
+        price: 99.99,
+        reviews: 120,
+        salesData: [30, 40, 60, 80, 50, 70],
+        imageUrl: 'https://via.placeholder.com/300',
+      },
+      {
+        name: 'Electronic Gadget 2',
+        description: 'This is the second electronic gadget.',
+        rating: 4.2,
+        price: 129.99,
+        reviews: 150,
+        salesData: [40, 50, 70, 90, 60, 80],
+        imageUrl: 'https://via.placeholder.com/300',
+      },
+      // Add more products as needed
+    ],
+    // Add more categories as needed
+    Clothes: [
+        {
+      name: 'Fashionable Clothes',
+      description: 'These are fashionable clothes.',
+      rating: 4.8,
+      price: 49.99,
+      reviews: 200,
+      salesData: [80, 90, 60, 50, 70, 40],
+      imageUrl: 'https://via.placeholder.com/300',
+        },
+    ],
+    FairnessCreams:[ {
+      name: 'Fairness Cream',
+      description: 'This is a fairness cream.',
+      rating: 3.5,
+      price: 19.99,
+      reviews: 100,
+      salesData: [40, 30, 50, 60, 80, 70],
+      imageUrl: 'https://via.placeholder.com/300',
+    },
+],
+  };
+
+  function loadProductData(category) {
+    const productsInCategory = products[category];
+
+    // Clear existing product details
+    document.getElementById('productDetails').innerHTML = '';
+
+    // Display product details dynamically
+    productsInCategory.forEach(product => {
+      const productCard = document.createElement('div');
+      productCard.className = 'product-card';
+
+      productCard.innerHTML = `
+        <img class="product-image" src="${product.imageUrl}" alt="Product Image">
+        <div class="product-data">
+          <h2>${product.name}</h2>
+          <p>${product.description}</p>
+          <p>Rating: <span>${product.rating}</span></p>
+          <p>Price: <span>$${product.price}</span></p>
+          <p>Reviews: <span>${product.reviews}</span></p>
+          <canvas class="salesChart" width="300" height="150"></canvas>
+        </div>
+      `;
+
+      document.getElementById('productDetails').appendChild(productCard);
+
+      // Create and update sales chart for each product
+      const salesChartCanvas = productCard.querySelector('.salesChart');
+      const salesChart = new Chart(salesChartCanvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          datasets: [{
+            label: 'Sales',
+            data: product.salesData,
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            fill: false,
+          }],
+        },
+      });
+    });
+
+    // Display product details container
+    document.getElementById('productDetails').style.display = 'flex';
+  }
+</script>
+
+<!-- Add Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

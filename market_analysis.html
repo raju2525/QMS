@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MARKET Analysis MODULE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style> body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;}
+        header {
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); /* Instagram-like gradient */
+            color: #ffffff; /* White text color */
+            padding: 0px;
+            
+        }
+        
+        .dash{
+            text-align: center;
+            font-size: 40px;
+        }
+        .home{
+            font-size: 25px;
+            color: #f0f0f0;
+        }
+        img{
+            width: 25px;
+        }
+        /* Inside your stylesheet or style tag */
+.module.market-analysis {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  width: 30%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card i {
+  font-size: 3em;
+  color: #007bff; /* Change the icon color as needed */
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+    </style>
+
+
+</head>
+
+<div>
+    <header><h1 style="font-size: 50px;">QMS</h1> 
+    
+    <h1 class="dash">MARKET ANALAYSIS</h1>
+    
+             
+    <a href="#" class="home"><img src="img/dashboard.png" >Dashboard</a>           
+    
+    </header>
+    
+</div>
+<!-- Inside your market analysis module -->
+<!-- Inside your market analysis module -->
+<div class="module market-analysis">
+  <div class="card market-trend" id="marketTrendCard">
+    <i class="fas fa-chart-line"></i>
+    <h2>Market Trend Products</h2>
+    <p>Explore the latest products trending in the market.</p>
+  </div>
+
+  <div class="card survey-data" id="surveyCard">
+    <i class="fas fa-poll"></i>
+    <h2>Survey Data</h2>
+    <p>Insights from surveys to help understand market preferences.</p>
+  </div>
+
+  <div class="card competitor-analysis" id="competitorAnalysisCard">
+    <i class="fas fa-chart-bar"></i>
+    <h2>Competitor Analysis</h2>
+    <p>Analyze competitors to stay ahead in the market.</p>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Add click event listener to the cards
+    document.getElementById('marketTrendCard').addEventListener('click', function () {
+        // Add a 2-second delay before redirecting
+        setTimeout(function () {
+            // Set the URL to the desired page
+            window.location.href = 'market-trend.html';
+        }, 1000); // 2000 milliseconds = 2 seconds
+    });
+
+    document.getElementById('surveyCard').addEventListener('click', function () {
+        // Add a 2-second delay before redirecting
+        setTimeout(function () {
+            // Set the URL to the desired page
+            window.location.href = 'survey-data.html';
+        }, 1000); // 2000 milliseconds = 2 seconds
+    });
+
+    document.getElementById('competitorAnalysisCard').addEventListener('click', function () {
+        // Add a 2-second delay before redirecting
+        setTimeout(function () {
+            // Set the URL to the desired page
+            window.location.href = 'competitor_page.html';
+        }, 1000); // 2000 milliseconds = 2 seconds
+    });
+});
+</script>
+</head>
+</html>
